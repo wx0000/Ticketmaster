@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+*.log
+mock_tickets.json
+.DS_Store
+
+# Local MCP server registration (machine-specific absolute path)
+.mcp.json
