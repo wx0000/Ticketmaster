@@ -1,14 +1,10 @@
-cat > .mcp.json.example << 'EOF'
 {
   "mcpServers": {
     "ticketing-mcp": {
       "type": "stdio",
       "command": "node",
-      "args": [
-        "/absolute/path/to/TicketMaster/dist/server.js"
-      ],
+      "args": ["/absolute/path/to/TicketMaster/dist/server.js"],
       "env": {}
     }
   }
 }
-EOF

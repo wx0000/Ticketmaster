@@ -82,20 +82,29 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   if (name === "read_log_file") {
     const filename = args?.filename as string;
 
-    // Security: prevent escaping the logs/ directory
-    if (filename.includes("..") || filename.includes("/")) {
+    // Security: resolve the requested path and require it to stay inside logs/.
+    // A substring check on ".." / "/" misses backslashes, absolute paths, and
+    // symlink-style escapes - resolving first and then checking containment is
+    // the only reliable way to enforce this.
+    const logsDir = path.resolve(process.cwd(), "logs");
+    const filePath = path.resolve(logsDir, filename);
+    const relative = path.relative(logsDir, filePath);
+
+    if (
+      relative === "" ||
+      relative.startsWith("..") ||
+      path.isAbsolute(relative)
+    ) {
       return {
         content: [
           {
             type: "text",
-            text: `Error: filename must be a plain name without path separators`,
+            text: `Error: filename must resolve to a file inside the logs/ directory`,
           },
         ],
         isError: true,
       };
     }
-
-    const filePath = path.join(process.cwd(), "logs", filename);
 
     try {
       const content = fs.readFileSync(filePath, "utf-8");

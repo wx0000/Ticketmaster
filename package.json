@@ -1,7 +1,7 @@
 {
-  "name": "savangard-mcp-ticketing",
+  "name": "mcp-bug-ticketing-agent",
   "version": "0.1.0",
-  "description": "MCP server for AI-assisted bug ticketing — Savangard interview prep",
+  "description": "MCP server for AI-assisted bug ticketing.",
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
@@ -9,14 +9,19 @@
     "start": "node dist/server.js",
     "dev": "tsx src/server.ts"
   },
-  "keywords": ["mcp", "claude", "qa", "jira"],
+  "keywords": [
+    "mcp",
+    "claude",
+    "qa",
+    "jira"
+  ],
   "license": "ISC",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "latest"
+    "@modelcontextprotocol/sdk": "^1.29.0"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "tsx": "latest",
-    "typescript": "latest"
+    "@types/node": "^25.8.0",
+    "tsx": "^4.22.0",
+    "typescript": "^6.0.3"
   }
 }
