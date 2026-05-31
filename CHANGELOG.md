@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to TicketMaster follow [Keep a Changelog](https://keepachangelog.com/)
+All notable changes to Cirth follow [Keep a Changelog](https://keepachangelog.com/)
 and [Semantic Versioning](https://semver.org/).
 
 ---

@@ -1,4 +1,4 @@
-# PROJECT.md — TicketMaster (MCP Bug Ticketing Agent)
+# PROJECT.md — Cirth (MCP Bug Ticketing Agent)
 
 Architectural reference for the project: what the system is, why it is built this
 way, and where it is going.

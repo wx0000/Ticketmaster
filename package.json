@@ -1,5 +1,5 @@
 {
-  "name": "mcp-bug-ticketing-agent",
+  "name": "cirth",
   "version": "0.1.0",
   "description": "MCP server for AI-assisted bug ticketing.",
   "type": "module",

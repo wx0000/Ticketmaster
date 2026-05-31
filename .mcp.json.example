@@ -3,7 +3,7 @@
     "ticketing-mcp": {
       "type": "stdio",
       "command": "node",
-      "args": ["/absolute/path/to/TicketMaster/dist/server.js"],
+      "args": ["/absolute/path/to/Cirth/dist/server.js"],
       "env": {}
     }
   }

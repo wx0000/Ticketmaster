@@ -1,6 +1,6 @@
 # CLAUDE.md — Engineering conventions
 
-Conventions for AI-assisted contributions to TicketMaster, a local MCP
+Conventions for AI-assisted contributions to Cirth, a local MCP
 bug-ticketing agent. Read `PROJECT.md` for architecture and `TESTING.md` for the
 test strategy before making non-trivial changes.
 

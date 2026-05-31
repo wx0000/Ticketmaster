@@ -1,4 +1,4 @@
-# TicketMaster — MCP Bug Ticketing Agent
+# Cirth — MCP Bug Ticketing Agent
 
 > A local Model Context Protocol (MCP) server exposing two tools — read a log file
 > and create a structured bug ticket — that let an AI agent turn a natural-language
